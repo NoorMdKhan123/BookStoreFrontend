@@ -1,0 +1,77 @@
+.lit
+{
+    width: 1366px;
+    height: 50%;
+}
+.container{
+    border: 1px solid lightgrey;
+    height: 40%;
+    width: 18%;
+    margin: 20px;
+    @media screen and (max-width: 100px) and (min-width: 300px) {
+      border: 1px solid lightgrey;
+      height: 40%;
+      width: 15%;
+      margin: 20px;
+      
+       
+
+    }
+}
+.container:hover{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+  .rating{
+    font-size: 10px; 
+    margin-left: 15px;
+    background: darkgreen;
+    color: white;
+    height: 14px;
+    width: 28px;
+  }
+  .bookname{
+    margin-left: 15px;
+    font-family: Roboto;
+    font-weight: 500; 
+    margin-top: 8px;
+  }
+  .author{
+    font-size: 10px; 
+    color: grey; 
+    margin-left: 15px;
+  }
+  .prize{
+    font-size: 10px;
+    margin-left: 15px;
+    margin-bottom: 10%;
+  }
+  .prizediv{
+    font-weight: 600;
+  }
+  .image{
+    background: #E2E2E2;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .ratng
+  {
+      margin-left:45px;
+      margin-bottom: 20px;;
+      
+  }
+  .Star{
+    font-size: 10px; 
+    margin-top: 12px;
+  }
+  .sort{
+    margin-top: 50px; 
+    margin-right: 80px;
+  }
+  .books{
+    font-size: 25px;
+    color: #0A0102;
+  }
+  .bookCount{
+    margin-left: 90px; 
+    margin-top: 50px;
+  }

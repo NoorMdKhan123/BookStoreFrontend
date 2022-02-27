@@ -1,0 +1,149 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<div fxLayout="row" fxLayoutAlign="center start" fxLayout.xs="row" fxFlex.xs="95">
+    <div class="sideTwoImg" fxLayout="column" fxLayoutGap="10px">
+        <div class="image1">
+            <img src="../../../assets/Image 13.png" id="img1">
+        </div>
+        <div class="image2">
+            <img src="../../../assets/Image 14.png" id="img2">
+        </div>
+    </div>
+    <div class="imageContainer" fxLayout="column">
+        <div class="container" fxLayout="row">
+            <div style="height: 60%;" class="image">
+                <img style="height: 60%;" src="../../../assets/Image 12.png" id="img">
+            </div>
+        </div>
+        <div class="buttonContainer" fxLayout="row" fxLayoutAlign="space-between center">
+            <div>
+                <button *ngIf="addTobag" mat-raised-button class="addtobag" (click)="addTocart()">
+                    add to bag
+                </button>
+            </div>
+            <div fxLayout="row" fxLayoutAlign="start center" class="addtowishlist" (click)="addToWishList()">
+                <!-- <button mat-flat-button class="wishlistbtn"> -->
+                    <mat-icon class="wishlistIcon">favorite</mat-icon>WISHLIST
+                <!-- </button> -->
+            </div>
+        </div>
+    </div>
+    <div class="bookDetails" fxLayout="column">
+        <div fxLayout="column">
+            <div class="bookName">
+                {{data.bookTitle}}
+            </div>
+            <div class="author">
+                by {{data.bookAuthor}}
+            </div>
+            <div fxLayout="row" fxLayoutGap="5px">
+                <div class="rating" fxLayoutAlign="start center">
+                {{data.rating}} 
+                <mat-icon class="Star">star</mat-icon>
+            </div >
+            <div >
+                {{data.ratingCount}} 
+                
+            </div>
+    
+            <div class="prize" fxLayout="row" fxLayoutGap="10px">
+                <div class="price">
+                    Rs.{{data.discountedPrice}}
+                </div>
+                <div class="discountprice">
+                    <del> Rs. {{data.originalPrice}} </del>
+                </div>
+            </div>
+        </div>
+        <mat-divider class="divider"></mat-divider>
+        <div fxLayout="column" fxLayoutAlign="start start">
+            <span class="bookdesc">Book Detail</span>
+            {{data.description}}
+            <p class="paragraph">
+                The Design of Everyday Things is a best-selling book by cognitive scientist and <br>
+                usability engineer Donald Norman about how design serves as the communication between<br>
+                 object and user, and how to optimize that conduit of communication in order to<br>
+                  make the experience of using the object pleasurable.
+            </p>
+        </div>
+        <mat-divider class="divider"></mat-divider>
+    
+    </div>
+
+<mat-divider class="divider"></mat-divider>
+        <div class="customer">
+            <span>Customers Feedback</span>
+        </div>
+        <div class="overallratin">
+            <div class="rate">
+                <p class="ratename">Overall Rating</p>
+                <span class="star-rating">
+                    <input type="radio" name="rating" value="1" (change)="starRating($event)"><i></i>
+                    <input type="radio" name="rating" value="2" (change)="starRating($event)"><i></i>
+                    <input type="radio" name="rating" value="3" (change)="starRating($event)"><i></i>
+                    <input type="radio" name="rating" value="4" (change)="starRating($event)"><i></i>
+                    <input type="radio" name="rating" value="5" (change)="starRating($event)"><i></i>
+                </span>
+            </div>
+            <div>
+                <input [(ngModel)]="feedback" type="text" placeholder="Write your review" class="review">
+            </div>
+            <div fxLayoutAlign="end center" >
+                <button mat-flat-button color="primary" class="submit" (click)="addFeedback()">Submit</button>
+            </div>
+        </div>
+        <div>
+            
+            <div fxLayout="column" *ngFor="let data of feedbackdata" >
+                <span>{{data.fullName}}</span>
+                <span>{{data.rating}}</span>
+                <div class="cont">
+                    <div class="stars">
+                        <ngx-star-rating [(ngModel)]="data.rating" [id]="'rating3'" [disabled]="true">
+                        </ngx-star-rating>
+                    </div>
+                </div>
+                <span>{{data.comment}}</span>
+                <span><h3></h3></span>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+
+ <!-- <div class="rate">
+                <p class="ratename">Overall Rating</p>
+
+
+                <button class ="btn" mat-icon-button color="accent" *ngFor="let r of ratingArr; index as i" (click)="onClick(i)" >
+                    <mat-icon>
+                      {{ returnStar(i) }}
+                    </mat-icon>
+  
+                </button>
+            </div> -->
+
+            <!-- <form [formGroup]="form">
+                <div class="cont">
+                  <div class="stars">
+                    <ngx-star-rating formControlName="rating1" [id]="'rating'"></ngx-star-rating>
+                  </div>
+                  <div>Rating: {{form.value.rating1}}</div>
+                  <p>form is valid: {{ form.valid ? 'true' : 'false' }}</p>
+                </div>
+                
+                <div class="cont">
+                    <div class="stars">
+                      <ngx-star-rating formControlName="rating2" [id]="'rating2'" [disabled] ="true"></ngx-star-rating>
+                    </div>
+                    <div>Rating(Disabled): {{form.value.rating2}}</div>
+                  </div>
+                </form>
+                
+                
+                <div class="cont">
+                  <div class="stars">
+                    <ngx-star-rating [(ngModel)]="rating3" [id]="'rating3'" ></ngx-star-rating >
+                  </div>
+                  <div>Rating: {{ rating3 }}</div>
+                </div> -->

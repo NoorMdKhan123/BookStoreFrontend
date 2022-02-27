@@ -1,0 +1,224 @@
+.body-part
+{
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background:gray 0% 0% no-repeat padding-box;
+    
+    
+}
+// .img-box
+// {
+//    /* Layout Properties */
+// top: 185px;
+// left: 320px;
+// width: 624px;
+// height: 375px;
+// /* UI Properties */
+// background: #F5F5F5 0% 0% no-repeat padding-box;
+// border-radius: 21px;
+// opacity: 1;
+// }
+// .kit
+// {
+
+//     margin-right: 270px;
+//     padding-top: 50px;
+//     display:flex;
+//     flex-direction: column;
+//     align-items: center;
+//     // height:375;
+//     // width:600px;
+// }
+// .img{
+// top: 237px;
+//  left: 373px;
+// // padding-top: 10%;
+// // padding-left: 5%;
+// width: 245px;
+// height: 245px;
+// border-radius: 50%;
+// // /* UI Properties */
+// //border-bottom-left-radius: 50%;
+// // padding-bottom: 50%;
+// background: transparent  0% 0% no-repeat padding-box;
+// // opacity: 1;
+
+// }
+
+// .text{
+// //     top: 513px;
+// // left: 391px;
+
+
+// /* UI Properties */
+// text-align: left;
+// padding-left:7%;
+// font-size: large;
+// font-weight: 600;
+// letter-spacing: 0px;
+// color: #0A0102;
+// text-transform: uppercase;
+// opacity: 1;
+// }
+// // .signup
+// // {
+// //     /* Layout Properties */
+// // top: 0px;
+// // left: 0px;
+// // width: 136px;
+// // height: 458px;
+// // /* UI Properties */
+// // background: #000000 0% 0% no-repeat padding-box;
+// // opacity: 0.31;
+// // }
+// // mat-card
+// // {
+// //     background-color: white;
+// // }
+// .log{
+//     display: flex;
+//     flex-direction: row;
+//     align-items: center;
+    
+//     gap:110px;
+// }
+// .container{
+//     // border: 1px solid black;
+//     margin-top: 150px;
+//     height: 60%;
+//     width: 25%;
+//     border-radius: 10px;
+   
+   
+//     // margin-left: 30%;
+// }
+// .signup{
+//     font-family: Roboto, sans-serif;
+//     margin-top: 15px;
+//     margin-bottom: 40px;
+//     font-size: 20px;
+//     font-weight: 500;
+//     text-transform: uppercase;
+//     color: #878787;
+//     cursor: pointer;
+// }
+// .signup:hover{
+//     color: black;
+//     border-bottom: 3px #9c121d solid;
+// }
+// .login{
+//     font-family: Roboto, sans-serif;
+//     margin-top: 15px;
+//     margin-bottom: 40px;
+//     font-size: 20px;
+//     font-weight: 500;
+//     text-transform: uppercase;
+//     color: #878787;
+//     cursor: pointer;
+// }
+// .login:hover{
+//     color: black;
+//     border-bottom: 3px #9c121d solid;
+// }
+// mat-card
+// {
+    
+//     align-items: center;
+// }
+// // .form-fields{
+// //     margin-left: 10%;
+// //     margin-right: 10%;
+// //     width:100%;
+// // }
+// // .signht{
+// //     height: 30%;
+// //     width:100%
+// // }
+
+.body{
+    background-color: #696969;
+    padding-bottom: 150;
+}
+.container{
+    margin-top: 5px;
+    height: 55%;
+    width: 30%;
+    border-radius: 10px;
+}
+.mat-form-field{
+    width: 100%;
+    height: 40px;
+}
+.signup{
+    font-family: Roboto, sans-serif;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #878787;
+    cursor: pointer;
+}
+.signup:hover{
+    color: black;
+    border-bottom: 3px #9c121d solid;
+}
+.login{
+    font-family: Roboto, sans-serif;
+    margin-top: 15px;
+    margin-bottom: 40px;
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #878787;
+    cursor: pointer;
+}
+.login:hover{
+    color: black;
+    border-bottom: 3px #9c121d solid;
+}
+.form-fields{
+    margin-left: 10%;
+    margin-right: 10%;
+    height: 60%;
+    margin-top:-5%
+}
+img{
+    width: 255px;
+    height: 255px;
+    margin-top:5%;
+    opacity: 1;
+    border-radius: 50%;
+    margin-left: 25px;
+}
+.kit
+// {
+
+//     margin-right: 270px;
+//     padding-top: 50px;
+//     display:flex;
+//     flex-direction: column;
+//     align-items: center;
+//     // height:375;
+//     // width:600px;
+// }
+.kit
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.text{
+    
+    text-align: center;
+    font-size: 18px;
+    font-family: Roboto, sans-serif;
+    letter-spacing: 0px;
+    color: #0A0102;
+    text-transform: uppercase;
+    font-weight: 500;
+    opacity: 1;
+    padding-top: 25px;
+}

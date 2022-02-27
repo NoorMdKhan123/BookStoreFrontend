@@ -1,0 +1,74 @@
+<div class="body-part" >
+    <mat-card  fxHide.xs fxHide.sm class="img-box">
+    
+    
+        <div class="kit">
+            <img class="img" src="../../../assets/2766594.png">
+            <div class="text">
+                online book shopping
+            </div>
+        </div>
+    </mat-card >
+   
+<mat-card class="container" fxLayout.xs="column" fxLayout.sm="column" fxFlex.xs="95" fxFlex.sm="60">
+    <div fxLayout.xs="column" fxLayout.sm="column" fxFlex.xs="95" fxFlex.sm="60">
+        <div fxLayout="row" fxLayoutGap="50%" fxLayoutAlign="center center">
+            <div class="signup">
+                login
+            </div>
+            <div class="login" routerLink="/signup">
+                signup
+            </div>
+        </div>
+        <form [formGroup]="loginForm" (click)="onSubmit()">
+            <div class="form-fields">
+                <div>
+                    <div>
+                        <mat-label style="font-size: medium; font-weight: 500;">Email Id</mat-label>
+                    </div>
+                    <div style="font-size: 10px;">
+                        <p>
+                            <mat-form-field appearance="outline">
+                                <input matInput type="text" formControlName="email" placeholder="">
+                                <mat-error>Enter email id</mat-error>
+                            </mat-form-field>
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <mat-label style="font-size: medium; font-weight: 500;">Password</mat-label>
+                    </div>
+                    <div style="font-size: 10px;">
+                        <p>
+                            <mat-form-field appearance="outline">
+                                <input matInput type="password" formControlName="password" placeholder="">
+                                <mat-error>Enter password</mat-error>
+                            </mat-form-field>
+                        </p>
+                    </div>
+                    <div  routerLink ="/forgotpassword" class = "psw">
+                        <button class="btnps">Forgot Password?</button>
+                      </div>
+                </div>
+            </div>
+            <div  class="fi" fxLayoutAlign="center center">
+                <button mat-raised-button
+                    style="width: 100%; background: brown; color: white;height: 190%; font-size: 16px;">Login</button>
+            </div>
+        </form>
+        <div class="fi" fxLayoutAlign="center center" fxLayout.xs="row" fxLayout.sm="row" fxFlex.xs="95" fxFlex.sm="60">
+            <h3>or</h3>
+        </div>
+        <div class="fg" fxLayout="row" fxLayoutGap="120px" 
+        fxLayout.xs="row" fxLayout.sm="row" fxFlex.xs="95" fxFlex.sm="60">
+            <div class= "li" >
+                <button class= "li" mat-flat-button color="primary" style="width: 270%; height:145%;color:white;">Facebook</button>
+            </div>
+            <div>
+                <button mat-raised-button style="width: 330%;height:140%">Google</button>
+            </div>
+        </div>
+    </div>
+</mat-card>
+</div>

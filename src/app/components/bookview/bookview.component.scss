@@ -1,0 +1,270 @@
+.container{
+    border: 1px solid darkgrey; 
+    width: 100%;
+    @media screen and (max-width: 1000px) and (min-width: 300px) {
+        border: 1px solid darkgrey; 
+        width: 100%;
+        height: 100%;
+    }
+}
+.image{
+    width: 70%;
+    margin: 30px;
+    height: 70%;
+}
+.prize{
+    font-size: 20px;
+    margin-top: 10px;
+  }
+.rating{
+    background: darkgreen;
+    height: 20px;
+    width: 40px;
+    color: white;
+    margin-bottom: 10px;
+}
+.book_quantity{
+    font-size: 20px;
+    border: 1px solid grey;
+    border-radius: 100%;
+    color: lightgrey;
+}
+.book_qty{
+    font-size: 20px;
+    border: 1px solid grey;
+    border-radius: 100%;
+    color: black;
+}
+.sideTwoImg{
+    margin-bottom: 16%; 
+    margin-right: 5px; 
+    margin-top: 5%;
+}
+.image1{
+    border: 1px solid black; 
+    padding: 5px;
+}
+#img
+{
+    height: 100px;
+    width:180px;
+    
+}
+#img1{
+    height: 65px; 
+    width: 45px;
+}
+#img2{
+    height: 65px; 
+    width: 45px;
+}
+.image2{
+    border: 1px solid black; 
+    padding: 5px;
+}
+.imageContainer{
+    margin-top: 5%;
+    height: 40%;
+}
+.buttonContainer{
+    margin-top: 20px;
+}
+.addtobag{
+    background: brown; 
+    color: white; 
+    width: 135%; 
+    height: 27px;
+    text-transform: uppercase;
+}
+.addtowishlist{
+    background: black; 
+    color: white;
+    width:48%;
+    height:20%;
+
+}
+.wishlistbtn{
+    background: black; 
+    color: white; 
+    width: 50%;
+   
+    text-transform: uppercase;
+}
+.wishlistIcon{
+    font-size: 18px;
+    padding-top: 0%;
+}
+.bookDetails{
+    margin-left: 5%; 
+    margin-bottom: 5%; 
+    margin-top: 5%;
+}
+.bookName{
+    font-size: 20px; 
+    margin-bottom: 10px;
+}
+.author{
+    color: grey; 
+    font-size: 15px; 
+    margin-bottom: 10px;
+}
+.starIcon{
+    font-size: 10px; 
+    margin-top: 12px;
+}
+.price{
+    font-weight: 600; 
+    margin-bottom: 10px;
+}
+.discountprice{
+    color: grey;
+}
+.divider{
+    margin-top: 10px; 
+    width: 595px;
+}
+.bookdesc{
+    opacity: 0.7; 
+    margin-top: 20px; 
+    margin-bottom: 5px;
+}
+.paragraph{
+    font-size: 13px;
+}
+.customer{
+    font-size: 18px; 
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.review{
+    border: none; 
+    outline: none; 
+    height: 60px; 
+    width: 90%;
+    margin-left: 20px;
+    font-size: 15px; 
+}
+.submit{
+    margin-right: 35px; 
+    margin-top: 20px; 
+    margin-bottom: 20px; 
+}
+.overallratin{
+    background: whitesmoke;
+}
+.rate{
+    margin-left: 15px;
+}
+.ratename{
+    font-size: 13px; 
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+  .cont {
+    width: 93%;
+    max-width: 350px;
+    text-align: center;
+    // margin-top: 2px;
+    padding: 2px 0;
+    overflow: hidden;
+    overflow: hidden;
+    margin-left:-60px;
+    
+  }
+    
+    div.stars {
+    width: 270px;
+    display: inline-block;
+    border:none;
+  }
+  
+ 
+.btn{
+margin-bottom: 4%;
+border:none;
+background-color: transparent;
+}
+.starrating{
+    margin-bottom: 10px;
+    float: left;
+}
+.starrating input{
+    display: none;
+}
+.starrating label{
+    font-size: 20px;
+    color: #444;
+    padding: 8px;
+    float: right;
+    transition: all 0.2 ease;
+}
+input:not(:checked) ~ label:hover,
+input:not(:checked) ~ label:hover ~ label
+{
+    color: #fd4;
+}
+input #rate-5:checked ~ label{
+    color: #fe7;
+    text-shadow: 0 0 20px #952;
+}
+
+.star-rating {
+    font-size: 0;
+    white-space: nowrap;
+    display: inline-block;
+    width: 100px;
+    height: 20px;
+    overflow: hidden;
+    position: relative;
+    background: url('data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iMjBweCIgaGVpZ2h0PSIyMHB4IiB2aWV3Qm94PSIwIDAgMjAgMjAiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDIwIDIwIiB4bWw6c3BhY2U9InByZXNlcnZlIj48cG9seWdvbiBmaWxsPSIjREREREREIiBwb2ludHM9IjEwLDAgMTMuMDksNi41ODMgMjAsNy42MzkgMTUsMTIuNzY0IDE2LjE4LDIwIDEwLDE2LjU4MyAzLjgyLDIwIDUsMTIuNzY0IDAsNy42MzkgNi45MSw2LjU4MyAiLz48L3N2Zz4=');
+    background-size: contain;margin-left: 15px;
+  }
+  .star-rating i {
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 20%;
+    z-index: 1;
+    background: url('data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iMjBweCIgaGVpZ2h0PSIyMHB4IiB2aWV3Qm94PSIwIDAgMjAgMjAiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDIwIDIwIiB4bWw6c3BhY2U9InByZXNlcnZlIj48cG9seWdvbiBmaWxsPSIjRkZERjg4IiBwb2ludHM9IjEwLDAgMTMuMDksNi41ODMgMjAsNy42MzkgMTUsMTIuNzY0IDE2LjE4LDIwIDEwLDE2LjU4MyAzLjgyLDIwIDUsMTIuNzY0IDAsNy42MzkgNi45MSw2LjU4MyAiLz48L3N2Zz4=');
+    background-size: contain;
+  }
+  .star-rating input {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    opacity: 0;
+    display: inline-block;
+    width: 20%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    z-index: 2;
+    position: relative;
+  }
+  .star-rating input:hover + i,
+  .star-rating input:checked + i {
+    opacity: 1;
+  }
+  .star-rating i ~ i {
+    width: 40%;
+  }
+  .star-rating i ~ i ~ i {
+    width: 60%;
+  }
+  .star-rating i ~ i ~ i ~ i {
+    width: 80%;
+  }
+  .star-rating i ~ i ~ i ~ i ~ i {
+    width: 100%;
+  }
+  ::after,
+  ::before {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-align: center;
+    vertical-align: middle;
+}	

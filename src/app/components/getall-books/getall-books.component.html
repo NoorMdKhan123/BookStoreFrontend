@@ -1,0 +1,53 @@
+<div class= "lit" fxLayout="row" fxLayoutAlign="space-between center" fxLayout.xs="row" fxLayout.sm="row">
+    <div class="bookCount">
+        <span class="books">Books</span>
+        <span class="count">({{countBooks}} items)</span>
+    </div>
+    <div class="sort">
+        <mat-form-field appearance="outline">
+            <mat-label>Sort by relevance</mat-label>
+            <mat-select style="height: 10px;" >
+                <mat-option (click)="lowTohigh()" value="1">Price:Low to High</mat-option>
+                <mat-option (click)="highTolow()" value="2">Price:High to Low</mat-option>
+                <mat-option (click)="newArrivals()" value="3">Newest Arrivals</mat-option>
+            </mat-select>
+        </mat-form-field>
+    </div>
+</div>
+<div fxLayout="row wrap" fxLayoutAlign="center center">
+    <div class="container" *ngFor="let book of Booklist | 
+    paginate: {itemsPerPage: 10, currentPage: page, totalItems: totalLength}"
+    fxLayout.sm="column" fxFlex.xs="50">
+        <div class="image" fxLayoutAlign="center center" (click)="view(book)">
+            <img src="../../../assets/Image 11.png" style="height: 60%; width: 50%;">
+        </div>
+        <mat-divider></mat-divider>
+        <div class="bookname">
+            {{book.bookTitle}}
+        </div>
+        <div class="author">
+            by {{book.bookAuthor}}
+        </div>
+        <div fxLayout="row" fxLayoutGap="5px">
+            <div class="rating" fxLayoutAlign="start center">
+            {{book.rating}} 
+            <mat-icon class="Star">star</mat-icon>
+        </div >
+        <div >
+            {{book.ratingCount}} 
+            
+        </div>
+        </div>
+        <div class="prize" fxLayout="row" fxLayoutGap="5px">
+            <div class="prizediv">
+                 Rs.{{book.discountedPrice}} 
+            </div>
+            <div style="color: grey;">
+                <del>  Rs.{{book.originalPrice}} </del>
+            </div>
+        </div>
+    </div>
+    <div class="pagination" fxLayout="column" fxLayoutAlign="center end">
+        <pagination-controls (pageChange)="page = $event"></pagination-controls>
+    </div>
+</div>
